@@ -5,22 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Password Generator</title>
-        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
         <script src="assets/js/jquery-3.4.1.min.js"></script>
-        <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
     </head>
     <body>
         <header>
-            <h1>Password Generator</h1>
+            <div class="container">
+                <h1>Password Generator</h1>
+            </div>
         </header>
         <main>
-            <h2>Generate Password</h2>
-            <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generates Password"></textarea>
-            <button class="btn btn-primary" id="generate" onclick="generatePassword()">Generate Password</button>
-            <button class="btn btn-secondary" id="copy" onclick="copyToClipboard()">Copy to Clipboard</button>
+            <div class="container card">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Generate Password</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generate Password"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button class="btn btn-primary" id="generate" onclick="generatePassword()">Generate a Password</button>
+                        <button class="btn btn-secondary" id="copy" onclick="copyToClipboard()">Copy to Clipboard</button>
+                    </div>
+                </div>
+            </div>
         </main>
     </body>
 </html>

@@ -1,11 +1,34 @@
+body {
+    background:#f9fbfd;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    border-style: dashed;
+    text-align: center;
+    padding: 10px;
+}
+
 #generate {
     border-radius: 20px;
     border-style: none;
     background-color: brown;
+    margin: 10px;
 }
 
 #copy {
     border-radius: 20px;
     border-style: none;
     background-color: lightgray;
+    margin: 10px;
+    float: right;
 }

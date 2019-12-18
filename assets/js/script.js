@@ -16,47 +16,47 @@ function generatePassword() {
     if (passwordLengthInt >= 8 && passwordLengthInt <= 128) {
         var upperChar = confirm("Would you like upper case letters in your password?");
             if (upperChar) {
-                var upperCharBool = true;
-                var charTypes = charTypes + 1;
+                true;
+                charTypes = charTypes + 1;
                 passwordArr.push(upper);
             } else {
-                var upperCharBool = false;
+                false;
             }
         
         var lowerChar = confirm("Would you like lower case letters in your password?");
             if (lowerChar) {
-                var lowerCharBool = true;
-                var charTypes = charTypes + 1;
+                true;
+                charTypes = charTypes + 1;
                 passwordArr.push(lower)
             } else {
-                var lowerCharBool = false;
+                false;
             }
         
         var numberChar = confirm("Would you like numbers in your password?")
             if (numberChar) {
-                var numberCharBool = true;
-                var charTypes = charTypes + 1;
+                true;
+                charTypes = charTypes + 1;
                 passwordArr.push(number)
             } else {
-                var numberCharBool = false;
+                false;
             }
         
         var specialChar = confirm("Wpuld you like specail characters in your password?");
             if (specialChar) {
-                var specialCharBool = true;
-                var charTypes = charTypes + 1;
+                true;
+                charTypes = charTypes + 1;
                 passwordArr.push(special)
             } else {
-                var specialCharBool = false;
+                false;
             }
 
-        if (types >= 1) {
+        if (charTypes >= 1) {
             for (i = 0; i < passwordLengthInt.length; i++) {
                 var randomValue = passwordLengthInt[Math.floor(Matg.random() * passwordLengthInt.length)];
                 avblPasswordArr.push(randomValue);
             }
             var passwordString = avblPasswordArr.join("");
-            console.log("Total number of password types chosen: " + types);
+            console.log("Total number of password types chosen: " + charTypes);
             console.log(passwordString);
             document.getElementById("password").value = passwordString;
         } else {
@@ -65,20 +65,19 @@ function generatePassword() {
     } else {
         alert("Please enter a number between 8 and 128.")
     }
-
 }
 
 /* Copy to Clipboard Function */
-function coptToClipboard () {
+function copyToClipboard () {
 
-    var textAreaField = document.getElementById("password");
+    var copyText = document.getElementById("textarea");
 
-    textAreaField.select()
-    textAreaField.setSelectionRange(0,99999);
+    copyText.select()
+    copyText.setSelectionRange(0,99999);
     document.execCommand("copy");
 
     if (textAreaField.value) {
-        alert("Copied " + textAreaField.value + " to your clipboard!");
+        alert("Copied " + copyText.value + " to your clipboard!");
     } else {
         alert("Generate your pasword and try again!");
     }
