@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Password Generator</title>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js"></script>
     </head>
     <body>
         <header>
-
+            <h1>Password Generator</h1>
         </header>
-        <footer>
-
-        </footer>
+        <main>
+            <h2>Generate Password</h2>
+            <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generates Password"></textarea>
+            <button class="btn btn-primary" id="generate">Generate Password</button>
+            <button class="btn btn-secondary" id="copy">Copy to Clipboard</button>
+        </main>
     </body>
 </html>
