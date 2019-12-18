@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Password Generator</title>
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/script.js"></script>
     </head>
@@ -18,8 +19,8 @@
         <main>
             <h2>Generate Password</h2>
             <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generates Password"></textarea>
-            <button class="btn btn-primary" id="generate">Generate Password</button>
-            <button class="btn btn-secondary" id="copy">Copy to Clipboard</button>
+            <button class="btn btn-primary" id="generate" onclick="generatePassword()">Generate Password</button>
+            <button class="btn btn-secondary" id="copy" onclick="copyToClipboard()">Copy to Clipboard</button>
         </main>
     </body>
 </html>

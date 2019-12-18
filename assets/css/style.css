@@ -1,0 +1,11 @@
+#generate {
+    border-radius: 20px;
+    border-style: none;
+    background-color: brown;
+}
+
+#copy {
+    border-radius: 20px;
+    border-style: none;
+    background-color: lightgray;
+}
