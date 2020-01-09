@@ -113,8 +113,3 @@ function copyToClipboard() {
         alert("Generate your pasword and try again!");
     }
 }
-
-/* Erase the text from previously generated password */
-function erasePrevText() {
-    document.getElementById("password").value="";
-}
